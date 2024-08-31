@@ -31,7 +31,7 @@ export default function Home() {
 							</ul>
 						</nav> */}
 						<Button asChild>
-							<Link href="/Resume_08_2024.pdf" target="_blank">
+							<Link href="/Resume2024.pdf" target="_blank">
 								My Resume
 							</Link>
 						</Button>
