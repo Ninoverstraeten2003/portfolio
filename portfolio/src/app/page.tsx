@@ -54,7 +54,7 @@ export default function Home() {
 						id="about"
 						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-muted-foreground"
 					>
-						<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+						<div className="sticky top-0 z-20 -mx-6 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
 							<h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">
 								About
 							</h2>
@@ -73,14 +73,14 @@ export default function Home() {
 							building
 							<span className="text-card-foreground">
 								{" "}
-								automation scripts Pi
+								automation scripts
 							</span>
 							, and diving deep into the world of electronics. My fascination
 							with technology only grew as I watched hours of
 							<span className="text-card-foreground"> PC building </span>
 							videos, meticulously analyzing how every component impacted
-							<span className="text-card-foreground"> performance </span>.
-							<span className="text-card-foreground"> Gaming </span> was more
+							<span className="text-card-foreground"> performance</span>.
+							<span className="text-card-foreground"> Gaming</span> was more
 							than just a pastime; it was an immersion into the cutting edge of
 							<span className="text-card-foreground">
 								{" "}
@@ -90,7 +90,7 @@ export default function Home() {
 						<p className="mb-4">
 							My journey has taught me the value of{" "}
 							<span className="text-card-foreground">hard work</span>,
-							<span className="text-card-foreground"> disipline</span> and a
+							<span className="text-card-foreground"> discipline,</span> and a
 							relentless pursuit of{" "}
 							<span className="text-card-foreground">perfection</span>. While I
 							take pride in my meticulous attention to detail, I also recognize
@@ -98,14 +98,14 @@ export default function Home() {
 							<span className="text-card-foreground">perfectionism</span> can be
 							a double-edged sword. I thrive in environments that challenge me
 							and push me to{" "}
-							<span className="text-card-foreground">innovate</span> especially
+							<span className="text-card-foreground">innovate</span>, especially
 							when there’s a{" "}
 							<span className="text-card-foreground">competitive edge</span>.
 						</p>
 						<p>
 							As I continue to grow in the tech industry, I am eager to
 							contribute to{" "}
-							<span className="text-card-foreground">cutting-edge project</span>{" "}
+							<span className="text-card-foreground">cutting-edge projects</span>{" "}
 							and drive{" "}
 							<span className="text-card-foreground">
 								technological advancements
