@@ -32,7 +32,7 @@ export function Links() {
 				</a>
 			</li>
 			<li className="group projects">
-				<a className="flex items-center py-2 " href="#projects">
+				<a className="flex items-center py-2 pb-4 " href="#projects">
 					<span
 						className={`nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-[.active]:bg-slate-200 group-[.active]:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none`}
 					></span>
