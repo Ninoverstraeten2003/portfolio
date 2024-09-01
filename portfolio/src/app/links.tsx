@@ -61,7 +61,7 @@ export function Links() {
 					</span>
 				</a>
 			</li>
-			<Separator />
+			<Separator className="w-11/12"/>
 			<li className="group flex items-center py-2">
 				<Button asChild variant="link" className="p-0">
 					<Link
