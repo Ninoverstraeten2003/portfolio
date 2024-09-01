@@ -40,8 +40,8 @@ export default function Home() {
 						id="about"
 						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-24 lg:scroll-mt-24 text-muted-foreground"
 					>
-						<div className="sticky top-0 z-20 -mx-6 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-							<h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">
+						<div className="sticky top-0 z-20 lg:-z-10 -mx-6 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:top-auto lg:mx-auto lg:w-full lg:px-0">
+							<h2 className="text-sm font-bold uppercase tracking-widest">
 								About
 							</h2>
 						</div>
@@ -95,8 +95,8 @@ export default function Home() {
 						id="experience"
 						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-24 lg:scroll-mt-24 text-muted-foreground"
 					>
-						<div className="sticky top-0 z-20 -mx-6 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-							<h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">
+						<div className="sticky top-0 z-20 lg:-z-10 -mx-6 w-screen px-6 pb-10 backdrop-blur md:-mx-12 md:px-12 lg:top-auto lg:mx-auto lg:w-full lg:px-0">
+							<h2 className="text-sm font-bold uppercase tracking-widest">
 								Experience
 							</h2>
 						</div>
@@ -180,8 +180,8 @@ export default function Home() {
 						id="projects"
 						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-muted-foreground"
 					>
-						<div className="sticky top-0 z-20 -mx-6 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-							<h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">
+						<div className="sticky top-0 z-20 -mx-6 w-screen px-6 pb-10 lg:-z-10 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0">
+							<h2 className="text-sm font-bold uppercase tracking-widest">
 								Projects
 							</h2>
 						</div>
