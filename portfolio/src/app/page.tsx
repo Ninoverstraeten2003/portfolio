@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Github from "../../public/github.svg";
 import LinkedIn from "../../public/linkedin.svg";
+import Instagram from "../../public/instagram.svg";
 import { Links } from "./links";
 import Projects from "./projects";
 import { Button } from "@/components/ui/button";
@@ -38,14 +39,31 @@ export default function Home() {
 						</nav>
 					</div>
 					<ul className="ml-1 mt-8 flex items-center" key={"LinkedIn"}>
-						<li className="mr-5 text-xs shrink-0">
+						<li className="mr-6 text-xs shrink-0">
 							<Link href="https://www.linkedin.com/in/nino-verstraeten">
-								<Image alt="LinkedIn" src={LinkedIn} />
+								<Image
+									alt="LinkedIn"
+									src={LinkedIn}
+									className="filter brightness-50 hover:brightness-100 sm:scale-125 lg:scale-150"
+								/>
 							</Link>
 						</li>
-						<li className="mr-5 text-xs shrink-0" key={"Github"}>
+						<li className="mr-6 text-xs shrink-0" key={"Github"}>
 							<Link href="https://www.github.com/Ninoverstraeten2003">
-								<Image alt="Github" src={Github} />
+								<Image
+									alt="Github"
+									src={Github}
+									className="filter brightness-50 hover:brightness-100 sm:scale-125 lg:scale-150"
+								/>
+							</Link>
+						</li>
+						<li className="mr-6 text-xs shrink-0" key={"Instagram"}>
+							<Link href="https://www.instagram.com/nino_verstraeten">
+								<Image
+									alt="Instagram"
+									src={Instagram}
+									className="filter brightness-50 hover:brightness-100 sm:scale-125 lg:scale-150"
+								/>
 							</Link>
 						</li>
 					</ul>
