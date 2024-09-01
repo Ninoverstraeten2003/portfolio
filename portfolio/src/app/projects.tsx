@@ -101,7 +101,7 @@ export default function Projects() {
 	return (
 		<div>
 			<ul className="group/list">
-				{projects.slice(0, 3).map((project) => {
+				{projects.slice(0, 4).map((project) => {
 					return (
 						<Project
 							key={project.title}
@@ -113,7 +113,7 @@ export default function Projects() {
 					);
 				})}
 				{loadMore &&
-					projects.slice(3, -1).map((project) => {
+					projects.slice(4, -1).map((project) => {
 						return (
 							<Project
 								key={project.title}

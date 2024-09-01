@@ -1,8 +1,8 @@
-import LinkedIn from "../../public/linkedin.svg";
-import Github from "../../public/github.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import Github from "../../public/github.svg";
+import LinkedIn from "../../public/linkedin.svg";
+import { Links } from "./links";
 import Projects from "./projects";
 
 export default function Home() {
@@ -18,31 +18,9 @@ export default function Home() {
 						<p className="mb-8 text-muted-foreground">
 							Focused on building accessible digital experiences.
 						</p>
-						{/* <nav>
-							<ul className="space-y-2">
-								<li className="text-sm uppercase tracking-wider text-muted-foreground">
-									About
-								</li>
-								<li className="text-sm uppercase tracking-wider text-muted-foreground">
-									Experience
-								</li>
-								<li className="text-sm uppercase tracking-wider text-muted-foreground">
-									Projects
-								</li>
-							</ul>
-						</nav> */}
-						<Button asChild variant="link" className="p-0">
-							<Link
-								href="/Resume2024.pdf"
-								target="_blank"
-								className="group flex items-center py-3"
-							>
-								<span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-								<span className="nav-text text-xs font-bold uppercase tracking-widest text-muted-foreground group-hover:text-slate-200 group-focus-visible:text-slate-200">
-									My Resume
-								</span>
-							</Link>
-						</Button>
+						<nav className="hidden lg:block">
+							<Links />
+						</nav>
 					</div>
 					<ul className="ml-1 mt-8 flex items-center" key={"LinkedIn"}>
 						<li className="mr-5 text-xs shrink-0">
@@ -199,7 +177,7 @@ export default function Home() {
 						</div>
 					</section>
 					<section
-						id="about"
+						id="projects"
 						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-muted-foreground"
 					>
 						<div className="sticky top-0 z-20 -mx-6 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -207,7 +185,7 @@ export default function Home() {
 								Projects
 							</h2>
 						</div>
-						<Projects/>
+						<Projects />
 					</section>
 				</main>
 			</div>
