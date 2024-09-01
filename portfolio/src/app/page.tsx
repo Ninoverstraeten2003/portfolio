@@ -3,8 +3,131 @@ import Github from "../../public/github.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Project, { ProjectProps } from "./project";
 
 export default function Home() {
+	const projects: ProjectProps[] = [
+		{
+			title: "Java Metro Ticket System",
+			description:
+				"Developed a metro ticketing system, utilizing various software design patterns to ensure scalability, maintainability, and clean code.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["Java", "Design Patterns"],
+		},
+		{
+			title: "Gym Mobile and Web App",
+			description:
+				"Created a cross-platform gym application that works seamlessly on both mobile devices and web browsers.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["React Native", "Expo", "React"],
+		},
+		{
+			title: "File Compression in C++",
+			description:
+				"Built a file compression utility in C++ focusing on efficient data storage and retrieval.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["C++", "File Compression"],
+		},
+		{
+			title: "Java Servlets Web-App",
+			description:
+				"Developed a web application using Java Servlets, providing server-side functionality and dynamic content generation.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["Java Servlets", "JSP"],
+		},
+		{
+			title: "Microservices Car Booking API",
+			description:
+				"Created a microservices-based REST API for car appointment bookings, using Spring Boot to manage the services.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["Java", "Spring Boot", "Microservices", "REST API"],
+		},
+		{
+			title: "Angular Web-App for Microsoft Tenants",
+			description:
+				"Built a web application that retrieves and displays information about Microsoft tenants, their subscriptions, and alerts via the Beta API.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["Angular", "Microsoft Beta API"],
+		},
+		{
+			title: "Discord Bot Integrated with OpenAI",
+			description:
+				"Developed a Discord bot that leverages OpenAI's API to provide intelligent conversation and interaction within a Discord server.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["Discord API", "OpenAI API"],
+		},
+		{
+			title: "Raspberry Pi Reverse Proxy and Discord Integration",
+			description:
+				"Set up a Raspberry Pi to establish a reverse proxy connection on startup, making it accessible online and automatically sending the connection details to a Discord server using Apprise.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["Raspberry Pi", "Reverse Proxy", "Discord API", "Apprise"],
+		},
+		{
+			title: "Docker Cluster in Azure",
+			description:
+				"Deployed a Docker cluster on Microsoft Azure to serve a web application, managing container orchestration and scaling.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["Docker", "Microsoft Azure"],
+		},
+		{
+			title: "Flappy Bird with Power-Ups in Python",
+			description:
+				"Developed a Python version of Flappy Bird, incorporating power-ups to enhance gameplay.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["Python", "Game Development"],
+		},
+		{
+			title: "Text Similarity Script for Workout Data",
+			description:
+				"Created a text similarity script that auto-corrects workout notes and exports the data to Excel for import into a workout app.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["Python", "Excel", "Text Processing"],
+		},
+		{
+			title: "Chained Workflow for Stage Opvolging",
+			description:
+				"Implemented a chained workflow system where multiple parties complete interdependent question-answer polls.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["Java", "Spring Boot", "NextJS"],
+		},
+		{
+			title: "Mocked SSE Stream and Data Visualization",
+			description:
+				"Mocked a Server-Sent Events (SSE) stream and visualized the data on a graph, demonstrating real-time data handling and display.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["SSE", "JavaScript", "Data Visualization"],
+		},
+		{
+			title: "Trading History Dashboard",
+			description:
+				"Developed a dashboard to visualize real-time statistics of trading history, using file uploads to populate a Postgres database.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["JavaScript", "Postgres", "Data Visualization"],
+		},
+		{
+			title: "Leuven2030 Website Maintenance",
+			description:
+				"Contributed to maintaining Leuven2030’s website, including version control and hosting optimization using Vercel.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["Vercel", "Version Control", "Web Hosting"],
+		},
+		{
+			title: "Shared Calendar App",
+			description:
+				"Built a shared calendar application with friends, utilizing Elixir and the Phoenix framework for efficient real-time updates.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["Elixir", "Phoenix Framework", "Real-Time Updates"],
+		},
+		{
+			title: "Minesweeper in C# using MVVM",
+			description:
+				"Developed a Minesweeper game in C#, employing the MVVM pattern for clean separation of concerns and improved testability.",
+			image: { src: "https://source.unsplash.com/300x300" },
+			skills: ["C#", "MVVM", "Game Development"],
+		},
+	];
+
 	return (
 		<div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
 			<div className="lg:flex lg:justify-between lg:gap-4">
@@ -43,13 +166,13 @@ export default function Home() {
 							</Link>
 						</Button>
 					</div>
-					<ul className="ml-1 mt-8 flex items-center">
+					<ul className="ml-1 mt-8 flex items-center" key={"LinkedIn"}>
 						<li className="mr-5 text-xs shrink-0">
 							<Link href="https://www.linkedin.com/in/nino-verstraeten">
 								<Image alt="LinkedIn" src={LinkedIn} />
 							</Link>
 						</li>
-						<li className="mr-5 text-xs shrink-0">
+						<li className="mr-5 text-xs shrink-0" key={"Github"}>
 							<Link href="https://www.github.com/Ninoverstraeten2003">
 								<Image alt="Github" src={Github} />
 							</Link>
@@ -59,7 +182,7 @@ export default function Home() {
 				<main className="pt-24 lg:w-1/2 lg:py-24">
 					<section
 						id="about"
-						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-muted-foreground"
+						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-24 lg:scroll-mt-24 text-muted-foreground"
 					>
 						<div className="sticky top-0 z-20 -mx-6 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
 							<h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">
@@ -114,7 +237,7 @@ export default function Home() {
 					</section>
 					<section
 						id="experience"
-						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-muted-foreground"
+						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-24 lg:scroll-mt-24 text-muted-foreground"
 					>
 						<div className="sticky top-0 z-20 -mx-6 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
 							<h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">
@@ -191,6 +314,31 @@ export default function Home() {
 									</div>
 								</li>
 							</ol>
+						</div>
+					</section>
+					<section
+						id="about"
+						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-muted-foreground"
+					>
+						<div className="sticky top-0 z-20 -mx-6 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+							<h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">
+								Projects
+							</h2>
+						</div>
+						<div>
+							<ul className="group/list">
+								{projects.map((project) => {
+									return (
+										<Project
+											key={project.title}
+											title={project.title}
+											description={project.description}
+											image={project.image}
+											skills={project.skills}
+										/>
+									);
+								})}
+							</ul>
 						</div>
 					</section>
 				</main>
