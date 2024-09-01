@@ -73,9 +73,9 @@ export default function Project({
 					<Image
 						alt={title}
 						width={200}
-						height={57}
+						height={100}
 						src={data?.results?.[0]?.urls.thumb!}
-						className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1 w-52 h-20 object-cover"
+						className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1 w-52 h-24 object-cover"
 					></Image>
 				)}
 			</div>
