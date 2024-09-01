@@ -4,6 +4,7 @@ import Github from "../../public/github.svg";
 import LinkedIn from "../../public/linkedin.svg";
 import { Links } from "./links";
 import Projects from "./projects";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
 	return (
@@ -20,6 +21,20 @@ export default function Home() {
 						</p>
 						<nav className="hidden lg:block">
 							<Links />
+						</nav>
+						<nav className="block lg:hidden">
+							<Button asChild variant="link" className="p-0">
+								<Link
+									href="/Resume2024.pdf"
+									target="_blank"
+									className="group flex items-center"
+								>
+									<span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+									<span className="nav-text text-xs font-bold uppercase tracking-widest text-muted-foreground group-hover:text-slate-200 group-focus-visible:text-slate-200">
+										My Resume
+									</span>
+								</Link>
+							</Button>
 						</nav>
 					</div>
 					<ul className="ml-1 mt-8 flex items-center" key={"LinkedIn"}>
@@ -40,7 +55,7 @@ export default function Home() {
 						id="about"
 						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-24 lg:scroll-mt-24 text-muted-foreground"
 					>
-						<div className="sticky top-0 z-20 lg:-z-10 -mx-6 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:top-auto lg:mx-auto lg:w-full lg:px-0">
+						<div className="sticky top-0 z-20 lg:-z-10 -mx-6 w-screen px-6 py-5 lg:pt-0 backdrop-blur md:-mx-12 md:px-12 lg:top-auto lg:mx-auto lg:w-full lg:px-0">
 							<h2 className="text-sm font-bold uppercase tracking-widest">
 								About
 							</h2>
@@ -95,7 +110,7 @@ export default function Home() {
 						id="experience"
 						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-24 lg:scroll-mt-24 text-muted-foreground"
 					>
-						<div className="sticky top-0 z-20 lg:-z-10 -mx-6 w-screen px-6 pb-10 backdrop-blur md:-mx-12 md:px-12 lg:top-auto lg:mx-auto lg:w-full lg:px-0">
+						<div className="sticky top-0 z-20 lg:-z-10 -mx-6 w-screen px-6 py-5 lg:pt-0 lg:pb-10 backdrop-blur md:-mx-12 md:px-12 lg:top-auto lg:mx-auto lg:w-full lg:px-0">
 							<h2 className="text-sm font-bold uppercase tracking-widest">
 								Experience
 							</h2>
@@ -180,7 +195,7 @@ export default function Home() {
 						id="projects"
 						className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-muted-foreground"
 					>
-						<div className="sticky top-0 z-20 -mx-6 w-screen px-6 pb-10 lg:-z-10 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0">
+						<div className="sticky top-0 z-20 -mx-6 w-screen px-6 py-5 lg:pt-0 lg:pb-10 lg:-z-10 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0">
 							<h2 className="text-sm font-bold uppercase tracking-widest">
 								Projects
 							</h2>
