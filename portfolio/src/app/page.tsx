@@ -8,123 +8,94 @@ import Project, { ProjectProps } from "./project";
 export default function Home() {
 	const projects: ProjectProps[] = [
 		{
-			title: "Java Metro Ticket System",
+			title: "Leuven2030 EcoFoodMap Maintenance",
 			description:
-				"Developed a metro ticketing system, utilizing various software design patterns to ensure scalability, maintainability, and clean code.",
-			image: { src: "https://source.unsplash.com/300x300" },
-			skills: ["Java", "Design Patterns"],
+				"Contributed to maintaining Leuven2030’s website, including version control and hosting optimization using Vercel.",
+			skills: ["Vercel", "Version Control", "Web Hosting"],
 		},
 		{
-			title: "Gym Mobile and Web App",
+			title: "Internship Follow-Up",
+			description:
+				"Implemented a chained workflow system where multiple parties complete interdependent question-answer polls.",
+			skills: ["Java", "Spring Boot", "NextJS"],
+		},
+		{
+			title: "Social Media Workout Tracker",
 			description:
 				"Created a cross-platform gym application that works seamlessly on both mobile devices and web browsers.",
-			image: { src: "https://source.unsplash.com/300x300" },
 			skills: ["React Native", "Expo", "React"],
 		},
 		{
-			title: "File Compression in C++",
-			description:
-				"Built a file compression utility in C++ focusing on efficient data storage and retrieval.",
-			image: { src: "https://source.unsplash.com/300x300" },
-			skills: ["C++", "File Compression"],
-		},
-		{
-			title: "Java Servlets Web-App",
-			description:
-				"Developed a web application using Java Servlets, providing server-side functionality and dynamic content generation.",
-			image: { src: "https://source.unsplash.com/300x300" },
-			skills: ["Java Servlets", "JSP"],
-		},
-		{
-			title: "Microservices Car Booking API",
+			title: "Orchestrated Car Booking System",
 			description:
 				"Created a microservices-based REST API for car appointment bookings, using Spring Boot to manage the services.",
-			image: { src: "https://source.unsplash.com/300x300" },
 			skills: ["Java", "Spring Boot", "Microservices", "REST API"],
 		},
 		{
-			title: "Angular Web-App for Microsoft Tenants",
+			title: "Minesweeper",
 			description:
-				"Built a web application that retrieves and displays information about Microsoft tenants, their subscriptions, and alerts via the Beta API.",
-			image: { src: "https://source.unsplash.com/300x300" },
-			skills: ["Angular", "Microsoft Beta API"],
+				"Developed a Minesweeper game in C#, employing the MVVM pattern for clean separation of concerns and improved testability.",
+			skills: ["C#", "MVVM", "Game Development"],
 		},
 		{
-			title: "Discord Bot Integrated with OpenAI",
+			title: "File Compression",
 			description:
-				"Developed a Discord bot that leverages OpenAI's API to provide intelligent conversation and interaction within a Discord server.",
-			image: { src: "https://source.unsplash.com/300x300" },
-			skills: ["Discord API", "OpenAI API"],
+				"Built a file compression utility in C++ focusing on efficient data storage and retrieval.",
+			skills: ["C++", "File Compression"],
 		},
 		{
-			title: "Raspberry Pi Reverse Proxy and Discord Integration",
+			title: "Shared Calendar",
 			description:
-				"Set up a Raspberry Pi to establish a reverse proxy connection on startup, making it accessible online and automatically sending the connection details to a Discord server using Apprise.",
-			image: { src: "https://source.unsplash.com/300x300" },
-			skills: ["Raspberry Pi", "Reverse Proxy", "Discord API", "Apprise"],
+				"Built a shared calendar application, utilizing Elixir and the Phoenix framework for efficient real-time updates.",
+			skills: ["Elixir", "Phoenix Framework", "Real-Time Updates"],
+		},
+		{
+			title: "Java Metro Ticket System",
+			description:
+				"Developed a metro ticketing system, utilizing various software design patterns to ensure scalability, maintainability, and clean code.",
+			skills: ["Java", "Design Patterns"],
+		},
+		{
+			title: "Trading History Dashboard",
+			description:
+				"Developed a dashboard to visualize real-time statistics of trading history, using file uploads to populate a Postgres database.",
+			skills: ["JavaScript", "Postgres", "Data Visualization"],
+		},
+		{
+			title: "Mocked SSE Stream and Data Visualization",
+			description:
+				"Mocked a Server-Sent Events (SSE) stream and visualized the data on a graph, demonstrating real-time data handling and display.",
+			skills: ["SSE", "JavaScript", "Data Visualization"],
 		},
 		{
 			title: "Docker Cluster in Azure",
 			description:
 				"Deployed a Docker cluster on Microsoft Azure to serve a web application, managing container orchestration and scaling.",
-			image: { src: "https://source.unsplash.com/300x300" },
 			skills: ["Docker", "Microsoft Azure"],
+		},
+		{
+			title: "Discord Bot Integrated with OpenAI",
+			description:
+				"Developed a Discord bot that leverages OpenAI's API to provide intelligent conversation and interaction within a Discord server.",
+			skills: ["Discord API", "OpenAI API"],
+		},
+		{
+			title: "Cloud Accessible Raspberry Pi ",
+			description:
+				"Set up a Raspberry Pi to establish a reverse proxy connection on startup, making it accessible online and automatically sending the connection details to a Discord server using Apprise.",
+			skills: ["Raspberry Pi", "Reverse Proxy", "Discord API", "Apprise"],
 		},
 		{
 			title: "Flappy Bird with Power-Ups in Python",
 			description:
 				"Developed a Python version of Flappy Bird, incorporating power-ups to enhance gameplay.",
-			image: { src: "https://source.unsplash.com/300x300" },
 			skills: ["Python", "Game Development"],
 		},
 		{
 			title: "Text Similarity Script for Workout Data",
 			description:
 				"Created a text similarity script that auto-corrects workout notes and exports the data to Excel for import into a workout app.",
-			image: { src: "https://source.unsplash.com/300x300" },
 			skills: ["Python", "Excel", "Text Processing"],
-		},
-		{
-			title: "Chained Workflow for Stage Opvolging",
-			description:
-				"Implemented a chained workflow system where multiple parties complete interdependent question-answer polls.",
-			image: { src: "https://source.unsplash.com/300x300" },
-			skills: ["Java", "Spring Boot", "NextJS"],
-		},
-		{
-			title: "Mocked SSE Stream and Data Visualization",
-			description:
-				"Mocked a Server-Sent Events (SSE) stream and visualized the data on a graph, demonstrating real-time data handling and display.",
-			image: { src: "https://source.unsplash.com/300x300" },
-			skills: ["SSE", "JavaScript", "Data Visualization"],
-		},
-		{
-			title: "Trading History Dashboard",
-			description:
-				"Developed a dashboard to visualize real-time statistics of trading history, using file uploads to populate a Postgres database.",
-			image: { src: "https://source.unsplash.com/300x300" },
-			skills: ["JavaScript", "Postgres", "Data Visualization"],
-		},
-		{
-			title: "Leuven2030 Website Maintenance",
-			description:
-				"Contributed to maintaining Leuven2030’s website, including version control and hosting optimization using Vercel.",
-			image: { src: "https://source.unsplash.com/300x300" },
-			skills: ["Vercel", "Version Control", "Web Hosting"],
-		},
-		{
-			title: "Shared Calendar App",
-			description:
-				"Built a shared calendar application with friends, utilizing Elixir and the Phoenix framework for efficient real-time updates.",
-			image: { src: "https://source.unsplash.com/300x300" },
-			skills: ["Elixir", "Phoenix Framework", "Real-Time Updates"],
-		},
-		{
-			title: "Minesweeper in C# using MVVM",
-			description:
-				"Developed a Minesweeper game in C#, employing the MVVM pattern for clean separation of concerns and improved testability.",
-			image: { src: "https://source.unsplash.com/300x300" },
-			skills: ["C#", "MVVM", "Game Development"],
 		},
 	];
 
@@ -290,10 +261,9 @@ export default function Home() {
 												</div>
 											</h3>
 											<p className="mt-2 text-sm leading-normal">
-												Developing a full-stack single-page application for
-												managing Microsoft 365 tenants. This application
-												contained cost analysis of SKUs/Subscriptions in an
-												interactive dashboard for managing tenants.
+												Built a web application that retrieves and displays
+												information about Microsoft tenants, their
+												subscriptions, and alerts via the Beta API.
 											</p>
 											<ul
 												className="mt-2 flex flex-wrap"
@@ -307,6 +277,11 @@ export default function Home() {
 												<li className="mr-1.5 mt-2">
 													<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-200 ">
 														Angular
+													</div>
+												</li>
+												<li className="mr-1.5 mt-2">
+													<div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-200 ">
+														Microsoft Beta API
 													</div>
 												</li>
 											</ul>
