@@ -16,11 +16,7 @@ export default function Project({
 	image,
 	skills,
 }: ProjectProps) {
-	const {
-		data,
-		isLoading,
-	} =
-		useGetPhotosByQuery({ query: description });
+	const { data } = useGetPhotosByQuery({ query: title });
 
 	return (
 		<li className="mb-12">
