@@ -3,10 +3,10 @@ import Script from "next/script";
 import "./globals.css";
 import Providers from "./providers";
 
-import { Inter } from 'next/font/google';
- 
+import { Inter } from "next/font/google";
+
 // If loading a variable font, you don't need to specify the font weight
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 const seoKeywords = [
 	"web development",
@@ -46,6 +46,9 @@ export const metadata: Metadata = {
 	metadataBase: new URL("https://www.ninoverstraeten.com"),
 	keywords: [...seoKeywords],
 	title: "Nino Verstraeten",
+	icons: {
+		icon: "/favicon.ico",
+	},
 	openGraph: {
 		description: "My portfolio",
 		images: ["/thumb.png"],
