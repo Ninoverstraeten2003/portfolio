@@ -50,8 +50,22 @@ export const metadata: Metadata = {
 	description:
 		"Hi, I'm Nino, a software engineer based in Belgium. I have been captivated by the world of science and technology since childhood and eager to contribute to cutting-edge projects and drive technological advancements",
 	openGraph: {
-		description: "My portfolio",
-		images: ["/thumb.png"],
+		type: "website",
+		locale: "en_US",
+		url: "https://www.ninoverstraeten.com",
+		title: "Nino Verstraeten - Software Engineer",
+		description: "Hi, I'm Nino, a software engineer based in Belgium...",
+		images: [
+			{
+				url: "/thumb.png",
+				width: 1200,
+				height: 630,
+				alt: "Portfolio snapshot",
+			},
+		],
+	},
+	alternates: {
+		canonical: "https://www.ninoverstraeten.com",
 	},
 };
 
