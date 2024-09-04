@@ -45,7 +45,9 @@ const seoKeywords = [
 export const metadata: Metadata = {
 	metadataBase: new URL("https://www.ninoverstraeten.com"),
 	keywords: [...seoKeywords],
-	title: "Nino Verstraeten",
+	title: "Nino Verstraeten - Software Engineer",
+	description:
+		"Hi, I'm Nino, a software engineer based in Belgium. I have been captivated by the world of science and technology since childhood and eager to contribute to cutting-edge projects and drive technological advancements",
 	icons: {
 		icon: "/favicon.ico",
 	},
