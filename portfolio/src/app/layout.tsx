@@ -1,21 +1,55 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.css";
 import Providers from "./providers";
-import Script from "next/script";
 
-const geistSans = localFont({
-	src: "./fonts/GeistVF.woff",
-	variable: "--font-geist-sans",
-});
-const geistMono = localFont({
-	src: "./fonts/GeistMonoVF.woff",
-	variable: "--font-geist-mono",
-});
+import { Inter } from 'next/font/google';
+ 
+// If loading a variable font, you don't need to specify the font weight
+const inter = Inter({ subsets: ['latin'] })
+
+const seoKeywords = [
+	"web development",
+	"web development services",
+	"custom web development",
+	"front-end development",
+	"back-end development",
+	"full-stack development",
+	"responsive web design",
+	"e-commerce development",
+	"website maintenance",
+	"website optimization",
+	"web development company",
+	"web development agency",
+	"mobile-friendly websites",
+	"UI/UX design",
+	"JavaScript development",
+	"React development",
+	"Angular development",
+	"Vue.js development",
+	"PHP development",
+	"Node.js development",
+	"WordPress development",
+	"CMS development",
+	"website redesign",
+	"SEO-friendly websites",
+	"website security",
+	"API integration",
+	"web app development",
+	"SaaS development",
+	"progressive web apps",
+	"website hosting services",
+	"custom website solutions",
+];
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://www.ninoverstraeten.com"),
+	keywords: [...seoKeywords],
 	title: "Nino Verstraeten",
-	description: "Developed by the one and only",
+	openGraph: {
+		description: "My portfolio",
+		images: ["/thumb.png"],
+	},
 };
 
 export default function RootLayout({
@@ -39,7 +73,7 @@ export default function RootLayout({
 				></Script>
 				<script defer src="script.js"></script>
 			</head>
-			<body className={`${geistSans.variable} ${geistMono.variable} dark`}>
+			<body className={`${inter.className} dark`}>
 				<noscript>
 					<iframe
 						src="https://www.googletagmanager.com/ns.html?id=GTM-TPWMJFWW"
