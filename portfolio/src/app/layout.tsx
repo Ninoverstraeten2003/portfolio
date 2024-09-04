@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Person, WithContext } from "schema-dts";
 import "./globals.css";
 import Providers from "./providers";
 
@@ -54,6 +55,39 @@ export const metadata: Metadata = {
 	},
 };
 
+const jsonLd: WithContext<Person> = {
+	"@context": "https://schema.org",
+	"@type": "Person",
+	name: "Nino Verstraeten",
+	jobTitle: "Software Engineer",
+	description:
+		"Hi, I'm Nino, a software engineer based in Belgium. I have been captivated by the world of science and technology since childhood and eager to contribute to cutting-edge projects and drive technological advancements",
+	url: "https://www.ninoverstraeten.com",
+	sameAs: [
+		"https://www.linkedin.com/in/nino-verstraeten",
+		"https://www.github.com/Ninoverstraeten2003",
+		"https://www.instagram.com/nino_verstraeten",
+	],
+	image: "/thumb.png",
+	alumniOf: {
+		"@type": "EducationalOrganization",
+		name: "KU Leuven", // Assuming based on the project about Leuven2030
+	},
+	knowsAbout: [
+		"Web Development",
+		"Software Engineering",
+		"TypeScript",
+		"Angular",
+		"React",
+		"Java",
+		"Spring Boot",
+		"Microservices",
+		"Docker",
+		"Azure",
+		"Python",
+	],
+};
+
 export default function RootLayout({
 	children,
 }: Readonly<{
@@ -73,7 +107,14 @@ export default function RootLayout({
 						})(window,document,'script','dataLayer','GTM-TPWMJFWW');`,
 					}}
 				></Script>
-				<script defer src="script.js"></script>
+				<Script
+					id="portfolio-jsonld"
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(jsonLd),
+					}}
+				/>
+				x<script defer src="script.js"></script>
 			</head>
 			<body className={`${inter.className} dark`}>
 				<noscript>
