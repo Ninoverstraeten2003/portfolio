@@ -28,7 +28,7 @@ export default function AnimatedText() {
 	}, []);
 
 	return (
-		<p ref={textRef} className="mb-8 text-muted-foreground">
+		<p ref={textRef} className="mb-8 text-muted-foreground min-h-12 sm:min-h-0">
 			Focused on building accessible digital experiences.
 		</p>
 	);

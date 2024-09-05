@@ -68,7 +68,7 @@ export default function Home() {
 						</li>
 					</ul>
 				</header>
-				<main className="pt-24 lg:w-1/2 lg:py-24">
+				<main className="pt-12 lg:w-1/2 lg:py-24">
 					<About />
 					<section
 						id="experience"
