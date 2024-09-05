@@ -128,7 +128,7 @@ export default function RootLayout({
 						__html: JSON.stringify(jsonLd),
 					}}
 				/>
-				x<script defer src="script.js"></script>
+				<script defer src="script.js"></script>
 			</head>
 			<body className={`${inter.className} dark`}>
 				<noscript>
