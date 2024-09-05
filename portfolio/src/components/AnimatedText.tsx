@@ -16,7 +16,7 @@ export default function AnimatedText() {
 				textRef.current,
 				{ text: "" },
 				{
-					duration: 5,
+					duration: 3,
 					text: {
 						value: "Focused on building accessible digital experiences.",
 						delimiter: "",
