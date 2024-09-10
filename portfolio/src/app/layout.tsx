@@ -36,14 +36,14 @@ const seoKeywords = [
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ninoverstraeten.com"),
   keywords: [...seoKeywords],
-  title: "Nino Verstraeten - Computer Science Student",
+  title: "Nino Verstraeten - Student",
   description:
     "Hi, I'm Nino, a computer science student specializing in software engineering based in Belgium.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.ninoverstraeten.com",
-    title: "Nino Verstraeten - Computer Science Student",
+    title: "Nino Verstraeten - Student",
     description:
       "Hi, I'm Nino, a computer science student specializing in software engineering based in Belgium.",
     images: [
