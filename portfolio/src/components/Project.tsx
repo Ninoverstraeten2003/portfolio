@@ -36,7 +36,7 @@ export default function Project({
             {link ? (
               <div>
                 <a
-                  className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+                  className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 hover:text-white focus-visible:text-white"
                   href={link.href}
                   target="_blank"
                   rel="noreferrer noopener"
@@ -102,14 +102,15 @@ export default function Project({
             )}
           </h3>
           <p className="mt-2 text-sm leading-normal">{description}</p>
-
           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used:">
             {skills.map((skill) => {
               return (
                 <div key={skill}>
                   <li className="mr-1.5 mt-2">
-                    <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                      {skill}
+                    <div className="hero-join-button-dark group relative items-center justify-center overflow-hidden rounded-xl border border-input p-[1px] text-sm ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50">
+                      <span className="inline-flex items-center rounded-xl bg-secondary px-2 py-1 text-xs text-accent-foreground transition-all">
+                        {skill}
+                      </span>
                     </div>
                   </li>
                 </div>

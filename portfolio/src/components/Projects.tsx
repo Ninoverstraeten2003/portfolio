@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Project, { ProjectProps } from "./Project";
+import Link from "next/link";
 
 export default function Projects() {
   const projects: ProjectProps[] = [
@@ -62,13 +63,13 @@ export default function Projects() {
       title: "Trading History Dashboard",
       description:
         "Developed a dashboard to visualize real-time statistics of trading history, using file uploads to populate a Postgres database.",
-      skills: ["JavaScript", "Postgres", "Data Visualization"],
+      skills: ["TypeScript", "Postgres", "Data Visualization"],
     },
     {
       title: "Mocked SSE Stream and Data Visualization",
       description:
         "Mocked a Server-Sent Events (SSE) stream and visualized the data on a graph, demonstrating real-time data handling and display.",
-      skills: ["SSE", "JavaScript", "Data Visualization"],
+      skills: ["SSE", "TypeScript", "Data Visualization"],
     },
     {
       title: "Docker Cluster in Azure",
@@ -134,10 +135,13 @@ export default function Projects() {
             );
           })}
         <Button
-          variant={"outline"}
+          variant="outline"
+          className="hero-join-button-dark group relative h-10 items-center justify-center overflow-hidden rounded-xl border border-input p-[1px] text-sm ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
           onClick={() => setLoadMore((prev) => !prev)}
         >
-          Load {loadMore ? "Less" : "More"}
+          <span className="inline-flex h-full w-fit items-center gap-2 rounded-xl bg-secondary px-4 py-2 text-accent-foreground transition-all">
+            Load {loadMore ? "Less" : "More"}
+          </span>
         </Button>
       </ul>
     </div>
