@@ -5,6 +5,7 @@ import "./globals.css";
 import Providers from "./providers";
 
 import { Inter } from "next/font/google";
+import AnimatedStars from "@/components/AnimatedStars";
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({ subsets: ["latin"] });
@@ -129,6 +130,7 @@ export default function RootLayout({
         <script defer src="script.js"></script>
       </head>
       <body className={`${inter.className} dark`}>
+        <AnimatedStars />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TPWMJFWW"
