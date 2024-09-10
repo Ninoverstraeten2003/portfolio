@@ -6,10 +6,15 @@ import Project, { ProjectProps } from "./Project";
 export default function Projects() {
   const projects: ProjectProps[] = [
     {
-      title: "Leuven2030 EcoFoodMap Maintenance",
+      title: "Leuven2030 Contribution",
       description:
         "Contributed to maintaining Leuven2030’s website, including version control and hosting optimization using Vercel.",
       skills: ["Vercel", "Version Control", "Web Hosting"],
+      link: {
+        href: "https://www.ecofoodmap.be/",
+        name: "EcoFoodMap",
+        ariaLabel: "Ecofoodmap site (opens in a new tab)",
+      },
     },
     {
       title: "Internship Follow-Up",
@@ -109,6 +114,8 @@ export default function Projects() {
               description={project.description}
               image={project.image}
               skills={project.skills}
+              link={project.link}
+              header={project.header}
             />
           );
         })}
@@ -121,6 +128,8 @@ export default function Projects() {
                 description={project.description}
                 image={project.image}
                 skills={project.skills}
+                link={project.link}
+                header={project.header}
               />
             );
           })}

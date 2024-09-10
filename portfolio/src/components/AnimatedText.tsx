@@ -17,6 +17,7 @@ export default function AnimatedText() {
         { text: "" },
         {
           duration: 3,
+          delay: 2,
           text: {
             value: "Focused on building accessible digital experiences.",
             delimiter: "",
@@ -28,8 +29,16 @@ export default function AnimatedText() {
   }, []);
 
   return (
-    <p ref={textRef} className="mb-8 min-h-12 text-muted-foreground sm:min-h-0">
-      Focused on building accessible digital experiences.
-    </p>
+    <>
+      <p className="mb-8 min-h-12 text-muted-foreground sm:hidden">
+        Focused on building accessible digital experiences.
+      </p>
+      <p
+        ref={textRef}
+        className="mb-8 hidden min-h-12 text-muted-foreground sm:block"
+      >
+        Focused on building accessible digital experiences.
+      </p>
+    </>
   );
 }
