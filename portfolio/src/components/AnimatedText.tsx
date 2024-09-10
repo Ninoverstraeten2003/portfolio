@@ -30,12 +30,12 @@ export default function AnimatedText() {
 
   return (
     <>
-      <p className="mb-8 min-h-12 text-muted-foreground sm:hidden">
+      <p className="mb-4 min-h-12 text-muted-foreground sm:hidden">
         Focused on building accessible digital experiences.
       </p>
       <p
         ref={textRef}
-        className="mb-8 hidden min-h-12 text-muted-foreground sm:block"
+        className="mb-2 hidden min-h-12 text-muted-foreground sm:block"
       >
         Focused on building accessible digital experiences.
       </p>
