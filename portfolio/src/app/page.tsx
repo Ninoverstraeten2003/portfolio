@@ -34,7 +34,7 @@ export default function Home() {
             <h1 className="mb-2 text-5xl font-bold text-foreground">
               Nino Verstraeten
             </h1>
-            <h2 className="mb-2 text-xl">Software Engineer</h2>
+            <h2 className="mb-2 text-xl">Computer Science Student</h2>
             <AnimatedText />
             <nav className="hidden lg:block">
               <Links />
@@ -42,7 +42,7 @@ export default function Home() {
             <nav className="block lg:hidden">
               <Button asChild variant="link" className="p-0">
                 <Link
-                  href="/Resume2024.pdf"
+                  href="/resume.pdf"
                   target="_blank"
                   className="group flex items-center"
                 >

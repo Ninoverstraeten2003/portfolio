@@ -10,51 +10,41 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 const seoKeywords = [
-  "web development",
-  "web development services",
-  "custom web development",
-  "front-end development",
-  "back-end development",
-  "full-stack development",
-  "responsive web design",
-  "e-commerce development",
-  "website maintenance",
-  "website optimization",
-  "web development company",
-  "web development agency",
-  "mobile-friendly websites",
-  "UI/UX design",
-  "JavaScript development",
-  "React development",
-  "Angular development",
-  "Vue.js development",
-  "PHP development",
-  "Node.js development",
-  "WordPress development",
-  "CMS development",
-  "website redesign",
-  "SEO-friendly websites",
-  "website security",
-  "API integration",
-  "web app development",
-  "SaaS development",
-  "progressive web apps",
-  "website hosting services",
-  "custom website solutions",
+  "Web Development",
+  "Full-Stack Development",
+  "Responsive Web Design",
+  "Java Development",
+  "Spring Boot Development",
+  "React Development",
+  "NextJS Development",
+  "Microservices Architecture",
+  "REST API Development",
+  "Docker",
+  "Microsoft Azure",
+  "C# Development",
+  "Python Development",
+  "Game Development",
+  "Data Visualization",
+  "Server-Sent Events (SSE)",
+  "React Native Development",
+  "Discord API Integration",
+  "OpenAI API Integration",
+  "Mobile-Friendly Websites",
 ];
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ninoverstraeten.com"),
   keywords: [...seoKeywords],
-  title: "Nino Verstraeten - Software Engineer",
+  title: "Nino Verstraeten - Computer Science Student",
   description:
-    "Hi, I'm Nino, a software engineer based in Belgium. I have been captivated by the world of science and technology since childhood and eager to contribute to cutting-edge projects and drive technological advancements",
+    "Hi, I'm Nino, a computer science student specializing in software engineering based in Belgium.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.ninoverstraeten.com",
-    title: "Nino Verstraeten - Software Engineer",
-    description: "Hi, I'm Nino, a software engineer based in Belgium...",
+    title: "Nino Verstraeten - Computer Science Student",
+    description:
+      "Hi, I'm Nino, a computer science student specializing in software engineering based in Belgium.",
     images: [
       {
         url: "/thumb.png",
@@ -73,9 +63,9 @@ const jsonLd: WithContext<Person> = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Nino Verstraeten",
-  jobTitle: "Software Engineer",
+  jobTitle: "Computer Science Student",
   description:
-    "Hi, I'm Nino, a software engineer based in Belgium. I have been captivated by the world of science and technology since childhood and eager to contribute to cutting-edge projects and drive technological advancements",
+    "Hi, I'm Nino, a computer science student specializing in software engineering, based in Belgium.",
   url: "https://www.ninoverstraeten.com",
   sameAs: [
     "https://www.linkedin.com/in/nino-verstraeten",
@@ -83,10 +73,16 @@ const jsonLd: WithContext<Person> = {
     "https://www.instagram.com/nino_verstraeten",
   ],
   image: "/thumb.png",
-  alumniOf: {
-    "@type": "EducationalOrganization",
-    name: "KU Leuven", // Assuming based on the project about Leuven2030
-  },
+  alumniOf: [
+    {
+      "@type": "EducationalOrganization",
+      name: "UHasselt",
+    },
+    {
+      "@type": "EducationalOrganization",
+      name: "UC Leuven Limburg (UCLL)",
+    },
+  ],
   knowsAbout: [
     "Web Development",
     "Software Engineering",
@@ -99,6 +95,8 @@ const jsonLd: WithContext<Person> = {
     "Docker",
     "Azure",
     "Python",
+    "University Transfer",
+    "Specialization in Software Engineering",
   ],
 };
 

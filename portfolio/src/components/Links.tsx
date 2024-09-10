@@ -47,7 +47,7 @@ export function Links() {
       <li className="group flex items-center py-2">
         <Button asChild variant="link" className="p-0">
           <Link
-            href="/Resume2024.pdf"
+            href="/resume.pdf"
             target="_blank"
             className="group flex items-center"
           >
