@@ -59,3 +59,5 @@ export const getPhotosByQuery = async ({ query }: { query: string }) => {
   );
   return data;
 };
+
+
