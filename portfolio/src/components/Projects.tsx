@@ -135,13 +135,12 @@ export default function Projects() {
             );
           })}
         <Button
-          variant="outline"
-          className="hero-join-button-dark group relative h-10 items-center justify-center overflow-hidden rounded-xl border border-input p-[1px] text-sm ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+          variant="default"
+          // className="hero-join-button-dark group relative h-10 items-center justify-center overflow-hidden rounded-xl border border-input p-[1px] text-sm ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
           onClick={() => setLoadMore((prev) => !prev)}
         >
-          <span className="inline-flex h-full w-fit items-center gap-2 rounded-xl bg-secondary px-4 py-2 text-accent-foreground transition-all">
-            Load {loadMore ? "Less" : "More"}
-          </span>
+          {/* <span className="inline-flex h-full w-fit items-center gap-2 rounded-xl bg-secondary px-4 py-2 text-accent-foreground transition-all"> */}
+          <span>Load {loadMore ? "Less" : "More"}</span>
         </Button>
       </ul>
     </div>
