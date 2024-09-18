@@ -14,10 +14,14 @@ export default function AnimatedText() {
     if (textRef.current) {
       gsap.fromTo(
         textRef.current,
-        { text: "" },
         {
+          opacity: 0,
+          text: "",
+        },
+        {
+          opacity: 1,
           duration: 3,
-          delay: 2,
+          delay: 2, // You can adjust this delay as needed
           text: {
             value: "Focused on building accessible digital experiences.",
             delimiter: "",
@@ -35,9 +39,9 @@ export default function AnimatedText() {
       </p>
       <p
         ref={textRef}
-        className="mb-2 hidden min-h-12 text-muted-foreground sm:block"
+        className="mb-2 hidden min-h-12 text-muted-foreground opacity-0 sm:block"
       >
-        Focused on building accessible digital experiences.
+        {/* Leave this empty, GSAP will fill it */}
       </p>
     </>
   );

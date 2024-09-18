@@ -1,13 +1,30 @@
 "use client";
 
 import gsap from "gsap";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function AnimatedStars() {
   const starsContainerRef = useRef<HTMLDivElement>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    if (starsContainerRef.current) {
+    const handleLoad = () => {
+      setIsLoaded(true);
+    };
+
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isLoaded && starsContainerRef.current) {
       const stars = starsContainerRef.current.children;
 
       // Create animation for each star
@@ -20,13 +37,13 @@ export default function AnimatedStars() {
             y: -10,
             repeat: -1,
             yoyo: true,
-            duration: Math.random() * 2 + 1, // Random duration for twinkling effect
-            delay: Math.random() * 5, // Random delay to stagger animations
+            duration: Math.random() * 2 + 1,
+            delay: Math.random() * 5,
           },
         );
       });
     }
-  }, []);
+  }, [isLoaded]);
 
   return (
     <div
@@ -37,7 +54,7 @@ export default function AnimatedStars() {
       {Array.from({ length: 100 }).map((_, index) => (
         <div
           key={index}
-          className="absolute rounded-full bg-white"
+          className="absolute rounded-full bg-white opacity-0"
           style={{
             width: "2px",
             height: "2px",
